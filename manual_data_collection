@@ -1,0 +1,11 @@
+import pandas as pd
+data = {
+    "text": [
+        "Win a free iPhone!", "Your order has been shipped", 
+        "Congratulations, you won!", "Lunch at 2?"
+    ],
+    "label": ["spam", "ham", "spam", "ham"]
+}
+
+df = pd.DataFrame(data)
+df.to_csv("spam_dataset.csv", index=False)
